@@ -9,3 +9,5 @@
 // Refactor - Refactor your code! there are many reasons to refactor, such as efficiency, code style, and readibility. Make sure your code still passes your tests as you refactor. You repeat the cycle until your functionality is done. 
 
 // We're going to use the popular JEST testing package.
+
+// We will touch adder.js, where we will have adder function and we are also going to create a adder.test.js file. And adder.test.js file will be recognized automatically by Jest. 
