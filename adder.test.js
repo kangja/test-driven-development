@@ -7,5 +7,23 @@ const adder = require("./adder");
 describe("adder", () => {
   it("should add two numbers", () => {
     expect(adder(1, 2)).toBe(3);
-  })
+
+  });
+  it("should return a sole input", () => {
+    expect(adder(5)).toBe(5);
+  });
+  it("should add three numbers", () => {
+    expect(adder(1, 2, 3)).toBe(6);
+  });
+  it("should return 0 if no numbers are passed", () => {
+    expect(adder()).toBe(0);
+  });
+  it("should add any number of arguments", () => {
+    expect(adder(1, 2, 3, 4, 5, 6)).toBe(21);
+  });
 }) 
+//we now have 2 failing tests. For out new tests, we are seeing we're failing. 
+// ✓ should add two numbers (15 ms)
+// ✕ should return a sole input (11 ms)
+// ✕ should add three numbers (12 ms)
+// Let's go back to adder.js and add these functions. 
